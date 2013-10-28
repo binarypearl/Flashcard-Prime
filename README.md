@@ -5,6 +5,8 @@ a series of cards will be presented.  Once you think you know
 the answer, tap the card to reveal the answer.  Tap again to flip to the original side, or click
 on the button to proceed to the next card. 
 
+Flashcard Prime can be found on Google Play here: https://play.google.com/store/apps/details?id=com.flashcard_prime&hl=en 
+
 A flashcard is actually made up of 2 .png files.  Tapping a card flips the flashcard 
 to the other picture.  A deck is a directory of png files, where each pair of pictures
 ends with a '_a' or '_b' to denote it's a pair.  Decks are created though a Scheme script

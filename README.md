@@ -1,5 +1,5 @@
-﻿Introduction:
- Flashcard Prime:  An Android application that allows you to tap a flashcard to flip it.
+﻿Introduction:<br/>
+ Flashcard Prime is an Android application that allows you to tap a flashcard to flip it.
 This application is designed to have multiple “decks” of flashcards.  After selecting a deck, 
 a series of cards will be presented.  Once you think you know
 the answer, tap the card to reveal the answer.  Tap again to flip to the original side, or click

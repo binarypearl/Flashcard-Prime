@@ -1,0 +1,12 @@
+# view AndroidManifest.xml #generated:24
+-keep class com.flashcard_prime.FlashCardDisplayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:19
+-keep class com.flashcard_prime.FlashCardMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:9
+-keep class com.flashcard_prime.HomeScreenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.flashcard_prime.MainMenuPrefsActivity { <init>(...); }
+

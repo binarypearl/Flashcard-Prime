@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="background_color_keys">
+		<item name="red">Red</item>
+		<item name="orange">Orange</item>
+		<item name="yellow">Yellow</item>
+		<item name="green">Green</item>
+		<item name="blue">Blue</item>
+	</string-array>
+
+	<string-array name="background_color_values">
+		<item name="red">red</item>
+		<item name="orange">orange</item>
+		<item name="yellow">yellow</item>
+		<item name="green">green</item>
+		<item name="blue">blue</item>
+	</string-array>
+</resources>
+

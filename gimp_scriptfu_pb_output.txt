@@ -1,0 +1,254 @@
+Welcome to TinyScheme
+Copyright (c) Dimitrios Souflis
+Script-Fu Console - Interactive Scheme Development
+
+> (gimp-context-set-foreground '(255 255 255))
+(#t)
+> (gimp-drawble-fill 6 FOREGROUND-FILL)
+Error: eval: unbound variable: gimp-drawble-fill 
+
+> (gimp-drawable-fill 6 FOREGROUND-FILL)
+(#t)
+> (gimp-drawable-fill 6 BACKGROUND-FILL)
+(#t)
+> (gimp-drawable-fill 6 FOREGROND-FILL)
+Error: eval: unbound variable: FOREGROND-FILL 
+
+> (gimp-drawable-fill 6 FOREGROUND-FILL)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" " "Sans" 24 10)
+Error: eval: unbound variable: Sans" 
+
+> (gimp-text-layer-new 3 "2+2 = ?" " Sans 24 10)
+Error: Error reading string 
+
+> (gimp-text-layer-new 3 "2+2 = ?" " "Utopia" 24 10)
+Error: eval: unbound variable: Utopia" 
+
+> (gimp-text-layer-new 3 "2+2 = ?" "Utopia" 24 10)
+(7)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 24 10)
+(8)
+> (gimp-image-add-layer 2 8 -1)
+Error: Procedure execution of gimp-image-add-layer failed on invalid input arguments: Procedure 'gimp-image-add-layer' has been called with an invalid ID for argument 'image'. Most likely a plug-in is trying to work on an image that doesn't exist any longer. 
+
+> (gimp-image-add-layer 3 8 -1)
+(#t)
+> (gimp-context-set-foreground '(255 255 255))
+(#t)
+> (gimp-context-set-foreground '(000 000 000))
+(#t)
+> (gimp-image-add-layer 3 8 -1)
+Error: Procedure execution of gimp-image-add-layer failed on invalid input arguments: Procedure 'gimp-image-add-layer' has been called with an invalid ID for argument 'layer'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 
+
+> (gimp-image-add-layer 2 8 -1)
+Error: Procedure execution of gimp-image-add-layer failed on invalid input arguments: Procedure 'gimp-image-add-layer' has been called with an invalid ID for argument 'image'. Most likely a plug-in is trying to work on an image that doesn't exist any longer. 
+
+> (gimp-image-add-layer 3 8 -1)
+Error: Procedure execution of gimp-image-add-layer failed on invalid input arguments: Procedure 'gimp-image-add-layer' has been called with an invalid ID for argument 'layer'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 
+
+> (gimp-image-add-layer 2 8 -1)
+Error: Procedure execution of gimp-image-add-layer failed on invalid input arguments: Procedure 'gimp-image-add-layer' has been called with an invalid ID for argument 'image'. Most likely a plug-in is trying to work on an image that doesn't exist any longer. 
+
+> (gimp-image-add-layer 4 8 -1)
+Error: Procedure execution of gimp-image-add-layer failed on invalid input arguments: Procedure 'gimp-image-add-layer' has been called with an invalid ID for argument 'image'. Most likely a plug-in is trying to work on an image that doesn't exist any longer. 
+
+> (gimp-image-add-layer 5 8 -1)
+Error: Procedure execution of gimp-image-add-layer failed on invalid input arguments: Procedure 'gimp-image-add-layer' has been called with an invalid ID for argument 'image'. Most likely a plug-in is trying to work on an image that doesn't exist any longer. 
+
+> (gimp-image-add-layer 6 8 -1)
+Error: Procedure execution of gimp-image-add-layer failed on invalid input arguments: Procedure 'gimp-image-add-layer' has been called with an invalid ID for argument 'image'. Most likely a plug-in is trying to work on an image that doesn't exist any longer. 
+
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 24 10)
+(9)
+> (gimp-image-add-layer 9 8 -1)
+Error: Procedure execution of gimp-image-add-layer failed on invalid input arguments: Procedure 'gimp-image-add-layer' has been called with an invalid ID for argument 'image'. Most likely a plug-in is trying to work on an image that doesn't exist any longer. 
+
+> (gimp-image-add-layer 3 8 -1)
+Error: Procedure execution of gimp-image-add-layer failed on invalid input arguments: Procedure 'gimp-image-add-layer' has been called with an invalid ID for argument 'layer'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 
+
+> (gimp-image-add-layer 3 9 -1)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 24 1)
+(10)
+> (gimp-image-add-layer 3 -0 -1)
+Error: Procedure execution of gimp-image-add-layer failed on invalid input arguments: Procedure 'gimp-image-add-layer' has been called with an invalid ID for argument 'layer'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 
+
+> (gimp-image-add-layer 3 10 -1)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 24 1)
+(11)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 24 2)
+(12)
+> (gimp-image-add-layer 3 12 -1)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 18 2)
+(13)
+> (gimp-image-add-layer 3 13 -1)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 18 2)
+(14)
+> (gimp-image-add-layer 3 14 -1)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 18 2)
+(15)
+> (gimp-image-add-layer 3 15 -1)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 18 1)
+(16)
+> (gimp-image-add-layer 3 16 -1)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 18 25)
+Error: Procedure execution of gimp-text-layer-new failed on invalid input arguments: Procedure 'gimp-text-layer-new' has been called with value 'inches' for argument 'unit' (#5, type GimpUnit). This value is out of range. 
+
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 18 3)
+(17)
+> (gimp-image-add-layer 3 17 -1)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 18 4)
+(18)
+> (gimp-image-add-layer 3 18 -1)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 18 5)
+(19)
+> (gimp-image-add-layer 3 19 -1)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 18 2)
+(20)
+> (gimp-image-add-layer 3 20 -1)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 18 2)
+(21)
+> (gimp-image-add-layer 3 21 -1)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 18 2)
+(22)
+> (gimp-text-layer-set-justification 22 TEXT-JUSTFIY-CENTER)
+Error: eval: unbound variable: TEXT-JUSTFIY-CENTER 
+
+> (gimp-text-layer-set-justification 22 TEXT-JUSTIFY-CENTER)
+Error: Procedure execution of gimp-text-layer-set-justification failed on invalid input arguments: Item '2+2 = ?' (22) can not be used because it has not been added to an image 
+
+> (gimp-image-add-layer 3 22 -1)
+(#t)
+> (gimp-text-layer-set-justification 22 TEXT-JUSTIFY-CENTER)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 18 2)
+(23)
+> (gimp-image-add-layer 3 23 -1)
+(#t)
+> (gimp-layer-translate 23 128 128)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 18 2)
+(24)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 14 2)
+(25)
+> (gimp-image-add-layer 3 25 -1)
+(#t)
+> (gimp-get-image-width 3)
+Error: eval: unbound variable: gimp-get-image-width 
+
+> (gimp-image-width 3)
+(256)
+> (gimp-image-height 3)
+(320)
+> (gimp-layer-translate 23 128 160)
+Error: Procedure execution of gimp-layer-translate failed on invalid input arguments: Procedure 'gimp-layer-translate' has been called with an invalid ID for argument 'layer'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 
+
+> (gimp-layer-translate 25 128 160)
+(#t)
+> (gimp-drawable-width 25)
+(165)
+> (gimp-drawable-height 25)
+(46)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 14 2)
+(26)
+> (gimp-layer-translate 26 46 137)
+(#t)
+> (gimp-image-add-layer 3 25 -1)
+Error: Procedure execution of gimp-image-add-layer failed on invalid input arguments: Procedure 'gimp-image-add-layer' has been called with an invalid ID for argument 'layer'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 
+
+> (gimp-image-add-layer 3 26 -1)
+(#t)
+> (gimp-image-add-layer 3 26 -1)
+Error: Procedure execution of gimp-image-add-layer failed on invalid input arguments: Procedure 'gimp-image-add-layer' has been called with an invalid ID for argument 'layer'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 
+
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 14 2)
+(27)
+> (gimp-image-add-layer 3 27 -1)
+(#t)
+> (gimp-layer-translate 27 46 137)
+(#t)
+> (gimp-context-set-foreground '(222 000 255))
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 14 2)
+(28)
+> (gimp-layer-translate 28 46 137)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 14 2)
+(29)
+> (gimp-image-add-layer 3 29 -1)
+(#t)
+> (gimp-layer-translate 29 46 137)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 14 2)
+(30)
+> (gimp-layer-translate 30 46 137)
+(#t)
+> (gimp-image-add-layer 3 30 -1)
+(#t)
+> ; is this a comment
+
+> ;use the previous 3 command in that order to create a text and move it
+
+> ;(gimp-edit-blend 3 FG-BG-RGB-MODE 
+
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 14 2)
+(31)
+> (gimp-layer-translate 31 46 137)
+(#t)
+> (gimp-image-add-layer 3 31 -1)
+(#t)
+> (gimp-context-set-foreground '(222 000 255))
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans 14 2)
+Error: Error reading string 
+
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans" 14 2)
+(34)
+> (gimp-layer-translate 34 46 137)
+(#t)
+> (gimp-image-add-layer 3 34 -1)
+(#t)
+> (gimp-text-layer-new 3 "2+2 = ?" "Sans Bold" 14 2)
+(35)
+> (gimp-layer-translate 35 46 137)
+(#t)
+> (gimp-image-add-layer 3 35 -1)
+(#t)
+> (gimp-edit-blend 3 FG-BG-RGB-MODE NORMAL-MODE GRADIENT-LINEAR 100 0.0 REPEAT-NONE FALSE FALSE 1 0 TRUE -300 150 500 150)
+Error: Procedure execution of gimp-edit-blend failed on invalid input arguments: Procedure 'gimp-edit-blend' has been called with an invalid ID for argument 'drawable'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 
+
+> (gimp-edit-blend 35 FG-BG-RGB-MODE NORMAL-MODE GRADIENT-LINEAR 100 0.0 REPEAT-NONE FALSE FALSE 1 0 TRUE -300 150 500 150)
+Error: Procedure execution of gimp-edit-blend failed on invalid input arguments: Procedure 'gimp-edit-blend' has been called with an invalid ID for argument 'drawable'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 
+
+> (gimp-edit-blend 3 FG-BG-RGB-MODE NORMAL-MODE GRADIENT-LINEAR 100 0.0 REPEAT-NONE FALSE FALSE 1 0 TRUE -300 150 500 150)
+Error: Procedure execution of gimp-edit-blend failed on invalid input arguments: Procedure 'gimp-edit-blend' has been called with an invalid ID for argument 'drawable'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 
+
+> (gimp-edit-blend 9 FG-BG-RGB-MODE NORMAL-MODE GRADIENT-LINEAR 100 0.0 REPEAT-NONE FALSE FALSE 1 0 TRUE -300 150 500 150)
+Error: Procedure execution of gimp-edit-blend failed on invalid input arguments: Procedure 'gimp-edit-blend' has been called with an invalid ID for argument 'drawable'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 
+
+> (gimp-edit-blend 10 FG-BG-RGB-MODE NORMAL-MODE GRADIENT-LINEAR 100 0.0 REPEAT-NONE FALSE FALSE 1 0 TRUE -300 150 500 150)
+Error: Procedure execution of gimp-edit-blend failed on invalid input arguments: Procedure 'gimp-edit-blend' has been called with an invalid ID for argument 'drawable'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 
+
+> (gimp-edit-blend 8 FG-BG-RGB-MODE NORMAL-MODE GRADIENT-LINEAR 100 0.0 REPEAT-NONE FALSE FALSE 1 0 TRUE -300 150 500 150)
+Error: Procedure execution of gimp-edit-blend failed on invalid input arguments: Procedure 'gimp-edit-blend' has been called with an invalid ID for argument 'drawable'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 
+
+> (gimp-edit-blend 11 FG-BG-RGB-MODE NORMAL-MODE GRADIENT-LINEAR 100 0.0 REPEAT-NONE FALSE FALSE 1 0 TRUE -300 150 500 150)
+Error: Procedure execution of gimp-edit-blend failed on invalid input arguments: Item '2+2 = ?' (11) can not be used because it has not been added to an image 
+
+> (gimp-edit-blend 13 FG-BG-RGB-MODE NORMAL-MODE GRADIENT-LINEAR 100 0.0 REPEAT-NONE FALSE FALSE 1 0 TRUE -300 150 500 150)
+Error: Procedure execution of gimp-edit-blend failed on invalid input arguments: Procedure 'gimp-edit-blend' has been called with an invalid ID for argument 'drawable'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 
+
+> (gimp-edit-blend 12 FG-BG-RGB-MODE NORMAL-MODE GRADIENT-LINEAR 100 0.0 REPEAT-NONE FALSE FALSE 1 0 TRUE -300 150 500 150)
+Error: Procedure execution of gimp-edit-blend failed on invalid input arguments: Procedure 'gimp-edit-blend' has been called with an invalid ID for argument 'drawable'. Most likely a plug-in is trying to work on a layer that doesn't exist any longer. 

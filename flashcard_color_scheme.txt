@@ -1,0 +1,42 @@
+Background gradiant blend:
+red:  (255 177 177)
+yellow:  (255 251 187)
+
+Text color (front of card):  (255 000 000)
+Text color (back of card):   (000 212 070)
+
+-------------------------------------------------
+Commands:
+
+(gimp-image-new 256 320 RGB)
+(6)
+
+(gimp-context-set-foreground '(255 177 177))
+(#t)
+
+(gimp-context-set-background '(255 251 187))
+(#t)
+
+(gimp-layer-new 6 256 320 RGBA-IMAGE "base layer" 100 NORMAL-MODE)
+(52)
+
+(gimp-image-add-layer 6 52 -1)
+(#t)
+
+(gimp-edit-blend 52 FG-BG-RGB-MODE NORMAL-MODE GRADIENT-LINEAR 100 0.0 REPEAT-NONE FALSE FALSE 1 0 TRUE -300 150 500 150)
+(#t)
+
+(gimp-context-set-foreground '(255 000 000))
+(#t)
+
+(gimp-text-layer-new 6 "2+2 = ?" "Sans Bold" 14 2)
+(53)
+
+(gimp-image-add-layer 6 53 -1)
+(#t)
+
+(gimp-layer-translate 53 46 137)
+(#t)
+
+(gimp-display-new 6)
+(1)

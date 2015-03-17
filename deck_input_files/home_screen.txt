@@ -1,0 +1,1 @@
+Tutorial->\n\nThis is\nthe Front\nof the Card\n\nTap me.:This is the\nBack of\nthe Card.\nTap again\nor Tap\nTo Decks\nButton.

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Flashcard Prime</string>
+	<string name="spanish_main_activity_label">Spanish Flash Card Main Page:</string>
+	<string name="flashcard_main_display_label">Flashcard viewer:</string>
+	<string name="choose_background_title">Choose Background Color</string>
+	<string name="title_choose_background_color">Choose Background Color:</string>
+	<string name="summary_choose_background_color">Choose Your background color for the entire app:</string>
+	<string name="title_main_preferences">Main Preferences</string>
+	<string name="get_next_flashcard_button_text">Next Flashcard</string>
+	<string name="home_screen_label">Flashcard Prime</string>
+</resources>

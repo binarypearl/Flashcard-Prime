@@ -1,0 +1,4 @@
+Tangier\ndisease:Significant\nreduced\nlevels of\nHDL.\nGenes->\nABCA1
+Hemophilia:Bleeding\ndisorder\nthat slows\nblood clots\nGenes->\nF8,F9
+Diamond-\nBlackfan\nanemia:Bone\nmarrow\ndisorder\nGenes->\nRPL5,11,35A\n,RPS7,10,17\nRPS19,24,26
+Wiskott-\nAldrich\nsyndrome:Mostly\nmales\ndecrease in\nblood cells\nfor clotting\nGenes->\nWAS
